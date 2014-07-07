@@ -2,7 +2,6 @@
 library(maps)
 library(ggplot2)
 library(mapproj)
-
 library(plyr)
 
 # Load data with a State abbre
