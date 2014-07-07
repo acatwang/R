@@ -15,9 +15,9 @@ states <- map_data("state") # No abbr.
 head(states)
 
 data(state) # load from mapproj library
-state_dic<- data.frame(cbind(state.abb,state.name))
+state_dict<- data.frame(cbind(state.abb,state.name))
 names(state_dic) <- c("STATE","region")
-mydata <- join(mydata,state_dic, by="STATE")
+mydata <- join(mydata,state_dict, by="STATE")
 head(mydata)
 
 mydata$region <- tolower(mydata$region) # first letter is capitalized in state.name
