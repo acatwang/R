@@ -9,7 +9,7 @@ mydata <- read.csv("C:\\Users\\awang\\Desktop\\cott.csv")
 
 # map_data has the US state lag/long, but does not has state abbrevieation
 # State abbr data is available in the "state" data in mapproj
-# Merge your own data and the two state data for plot
+# Merge your own data and the two state data to create the dataframe for plot
 
 states <- map_data("state") # No abbr.
 head(states)
