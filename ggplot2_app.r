@@ -1,8 +1,8 @@
 library(ggplot2)
 library(plyr)
-library(scales)
 
 ## Plot time series data
+library(scales)
 
 ggplot(data, aes(x=as.Date(time),y=freq))+
   geom_line()+
