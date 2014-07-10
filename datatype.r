@@ -1,7 +1,5 @@
 ### Simple data manipulation with different data types in R
 
-
-
 #################
 ### Vector    ###
 #################
@@ -97,7 +95,8 @@ m3[order(m[,1],m[,2]), ]]	# ordered the matrix by vars/columns
 ## Create a data frame
 df <- data.frame(matrix(1:15,nrow=5,ncol=3))
 df1 <- read.csv(filePath)
-df2 <- cbind(vec1, vec2)	
+df2 <- cbind(vec1, vec2)
+df4 <- as.data.frame(matrix1)
 
 ## Useful function
 str(df)
@@ -110,7 +109,8 @@ merge(states,mydata, sort=FALSE, by="region", all.x =TRUE)		#merge two data fram
 
 ## Select
 df$X1				# select row by name
-df[,"X1"]			# select row by name
+df[,"X1"]	# select row by name
+df[c("X1","X2"),]                             # select desired rows
 df[sample(nrow(df), 3), ]	# select 3 rows randomly
 df[!is.na(df$X1),]	# select rows where X1 is not NA
 
