@@ -30,6 +30,7 @@ ggplot(data=zipcode)+geom_point((aes(x=longitude, y=latitude,color=factor(disast
   scale_x_continuous(limits = c(-125,-66), breaks = NA)+
   scale_y_continuous(limits = c(25,50), breaks = NA)+
   ggtitle("Disaster happened in the US by ZIP")+
-  theme(legend.position="none")
+  theme(legend.position="none")+  # remove legend
+  borders("state", size=.5)       # add state border
   
 
